@@ -1,37 +1,53 @@
 body{background-image: url(pattern-background-desktop.svg);
 
+
 }
+body h1{font-size: 35px;
+        line-height: 2px;
+        font-stretch: semi-expanded;}
+body p {font-size: 18px;}
 
 .background img{min-width: ;
             max-height: 33%;
 }
-
+/* make changes to box for the entire form here. */
 .form {max-width: 33%;
        max-height: inherit%;
       margin-left: 30%;
       margin-right: auto;
-      border-radius: 10%;
+      border-radius: 5%;
       /* padding-top: 100px; */
       background-color: white;
        }
+/* make changes for the image at the top of the form here */
 .form img{max-width: 100%;
          max-height: auto;
          /* margin-left: 1px; */
          margin-right: auto;
-         border-top-right-radius: 10%;
-          border-top-left-radius: 10%;
+         border-top-right-radius: 5%;
+          border-top-left-radius: 5%;
           padding-bottom: .5rem;
          }
+/* divs for the first two lines of text. Order summary proceeding paragraph */
 .orderSum{text-align: center;
           max-width: 20%
           padding-right: 10px;
-          padding-bottom: .5rem;}
-
+          padding-bottom: .25rem;
+          }
+.subtext{text-align: center;
+         max-width: 70%;
+         margin-left: 4rem;
+         margin-right: auto;}
+/* second line with music note and chosen plan */
 .plan{display: inline-flex;
       flex-direction: row;
-      margin-left: auto;
-      margin-right: 5px;
-      padding-right: 20px;}
+      margin-left: 3rem;
+      margin-right: auto;
+      padding-right: 30px;
+      padding-left: 30px;
+      background-color: hsl(225, 100%, 98%);
+      border-radius: 20px;
+    }
 .note{max-width:50%;
       padding-top: 5px;
       margin-left: 40px;
@@ -39,16 +55,34 @@ body{background-image: url(pattern-background-desktop.svg);
       margin-top: 10px;
       margin-right: 15px;
     }
-.type{padding-bottom: 15px;
+ .type{/*padding-bottom: 15px; */
       text-align: center;
       line-height: 15px;
       }
-  li{display: flex;
-     padding-top: 25px;
-     padding-right: 5px;}
+.plan li {display: flex;
+         padding-top: 25px;
+         padding-right: 5px;
+         margin-left: 2rem;
+         }
+.plan a{color: hsl(245, 75%, 52%);}
+
+
 .buttons{padding-bottom: 2rem;
-         text-align: center;}
-button{border-radius: 8px;
+         text-align: center;
+       }
+
+/* proceed to purchase and cancel button */
+button{border-radius: 10px;
        text-align: center;
        padding-right: 3rem;
-       padding-left: 3rem;}
+       padding-left: 3rem;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+       background-color: hsl(245, 75%, 52%);
+       border-color: inherit;
+       margin-top: 1rem;
+       }
+.buttons a {margin-top: 50px;
+            line-height: 3rem;
+            color: grey;
+            text-decoration: none;}
